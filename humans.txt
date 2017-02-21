@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Produced by Looking in beautiful El Segundo -- @lookingla
+    Dan Hanasono -- PM, web/ux designer, light fe dev -- @danhanasono
+    Bryan Deras -- web designer, front end dev
+
+
+# THANKS
+
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+    Bootstrap
+    Initialzr
+    PHP

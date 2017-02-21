@@ -1,0 +1,780 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+/*REFERENCE - COLORS*/
+$blackColor: rgba(0,0,0,.8)
+$whiteColor: #ffffff
+$redColor: #7e1416
+$redColorLighter: #c82832
+$blueColor: #1774b8
+$blueColorDarker: #0a324f
+$grayColor: #989899
+$darkGrayColor: #4c4c4c
+$tableRedColorD: #e9b9ba
+$tableRedColorL: #f8e7e8
+$tableBlueColorD: #bbd5e9
+$tableBlueColorL: #e8f1f8
+
+/* REFERENCE - RESPONSIVE BREAK POINTS */
+$mediaBigScreen: 1824px
+$mediaIpadLandscape: 1024px
+$mediaIpadVertical: 768px
+$mediaTabletLandscape: 800px
+$mediaTabletVertical: 600px
+$mediaiPhone5Landscape: 568px
+$mediaiPhone4Landscape: 480px
+$mediaiPhone6PlusVertical: 414px
+$mediaiPhone6Vertical: 375px
+$mediaiPhone5Vertical: 320px
+
+$widthMinD: min-device-width
+$widthMaxD: max-device-width
+$widthMin: min-width
+$widthMax: max-width
+$or: orientation
+$land: landscape
+$port: portrait
+
+/* TYPE! */
+a
+	color: $whiteColor
+p
+	font-family: 'Montserrat', sans-serif
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+
+.bold
+	font-style: normal
+	font-weight: 700
+
+/*UI!*/
+.btn 
+	border-radius: 12px 12px 12px 12px 
+	-webkit-border-top-left-radius: 12px
+	-webkit-border-top-right-radius: 12px
+	-webkit-border-bottom-right-radius: 12px
+	-webkit-border-bottom-left-radius: 12px
+	-moz-border-radius-topleft: 12px
+	-moz-border-radius-topright: 12px
+	-moz-border-radius-bottomright: 12px
+	-moz-border-radius-bottomleft: 12px
+	border-top-left-radius: 12px
+	border-top-right-radius: 12px
+	border-bottom-right-radius: 12px
+	border-bottom-left-radius: 12px
+
+/*CAROUSEL STYLES*/
+.carouselRight
+	position: absolute
+	top: 50%
+	right: 30px
+	font-size: 100px
+	margin-top: -60px
+	@media only screen and ($widthMin : $mediaiPhone5Vertical) and ($widthMax: $mediaTabletVertical)
+		right: 15px
+		font-size: 50px
+		margin-top: -30px
+
+.carouselLeft
+	position: absolute
+	top: 50%
+	left: 30px
+	font-size: 100px
+	margin-top: -60px
+	@media only screen and ($widthMin : $mediaiPhone5Vertical) and ($widthMax: $mediaTabletVertical)
+		left: 15px
+		font-size: 50px
+		margin-top: -30px
+
+.img100
+	width: 100%
+	height: auto
+
+/*EVENTS STYLES*/
+#events img
+	width: 100%
+	height: auto
+
+.eventMonth
+	font-family: 'Montserrat', sans-serif
+	font-style: normal
+	font-weight: 400
+	color: $darkGrayColor
+	text-transform: uppercase
+	font-size: 24px
+	top: 30px
+	position: relative
+	@media only screen and ($widthMin : $mediaBigScreen)
+		font-size: 40px
+	@media only screen and ($widthMax : $mediaIpadLandscape)
+		font-size: 20px	
+	@media only screen and ($widthMax: $mediaiPhone5Landscape)
+		font-size: 18px
+	@media only screen and ($widthMax: $mediaiPhone5Vertical)
+		font-size: 12px
+
+.eventInfo
+	padding-top: 24%
+	left: 1%
+	@media only screen and ($widthMin : $mediaiPhone5Vertical) and ($widthMax: $mediaTabletLandscape)
+		padding-top: 9%
+
+p.eventTitle
+	font-family: 'Montserrat', sans-serif
+	font-style: normal
+	font-weight: 400
+	color: $darkGrayColor
+	text-transform: uppercase
+	font-size: 28px
+	@media only screen and ($widthMin : $mediaBigScreen)
+		font-size: 40px
+		line-height: 40px
+	@media only screen and ($widthMax : $mediaIpadLandscape)
+		font-size: 20px	
+		line-height: 20px
+	@media only screen and ($widthMax : $mediaTabletLandscape)	
+		font-size: 30px
+		padding-top: 8px
+	@media only screen and ($widthMax : $mediaTabletVertical)
+		font-size: 24px
+		padding-top: 15px
+	@media only screen and ($widthMax: $mediaiPhone5Landscape)
+		font-size: 22px	
+	@media only screen and ($widthMax: $mediaiPhone6PlusVertical)
+		font-size: 11px
+		padding-top: 19px
+		padding-bottom: 0
+		line-height: 11px
+
+.eventDescription
+	position: relative
+
+p.eventDescription
+	@media only screen and ($widthMin : $mediaBigScreen)
+		font-size: 18px
+		line-height: 28px
+	@media only screen and ($widthMax : $mediaIpadLandscape)
+		font-size: 12px	
+		line-height: 16px
+	@media only screen and ($widthMax : $mediaTabletLandscape)
+		font-size: 18px
+		line-height: 28px
+	@media only screen and ($widthMax : $mediaTabletVertical)
+		font-size: 14px
+		line-height: 21px
+	@media only screen and ($widthMax: $mediaiPhone6PlusVertical)
+		font-size: 10px
+		line-height: 11px
+		padding: 0
+		
+
+.btnRed
+	font-family: 'Montserrat', sans-serif
+	font-style: normal
+	font-weight: 400
+	text-transform: uppercase
+	font-size: 14px
+	color: $whiteColor
+	background-color: $redColorLighter
+	&:hover
+		color: $whiteColor
+		background-color: $redColor
+	@media only screen and ($widthMin : $mediaBigScreen)
+		font-size: 28px
+
+.eventMobile
+	display: none
+	@media only screen and ($widthMin : $mediaiPhone5Vertical) and ($widthMax: $mediaTabletLandscape)
+		display: block
+
+.eventDesktop
+	display: block
+	@media only screen and ($widthMin : $mediaiPhone5Vertical) and ($widthMax: $mediaTabletLandscape)
+		display: none
+
+.changeOfHeart
+	position: absolute
+	z-index: 10
+	@media only screen and ($widthMax: $mediaTabletLandscape)
+		top: 875px
+		left: 3px
+	@media only screen and ($widthMax: $mediaIpadVertical)
+		top: 810px
+	@media only screen and ($widthMax: $mediaTabletVertical)
+		top: 615px
+	@media only screen and ($widthMax: $mediaiPhone5Landscape)
+		top: 575px
+		left: 0
+	@media only screen and ($widthMax: $mediaiPhone6PlusVertical)
+		top: 424px
+	@media only screen and ($widthMax: $mediaiPhone6Vertical)
+		top: 385px
+	@media only screen and ($widthMax: $mediaiPhone5Vertical)
+		top: 310px
+
+/*CLASS STYLES*/
+#pricing
+	padding-top: 30px
+	padding-bottom: 15px
+
+.classSchedule
+	position: absolute
+	z-index: 10
+	transform: translateY(25%)
+	width: 512px
+	left: 50%
+	margin-left: -256px
+	@media only screen and ($widthMin : $mediaBigScreen)
+		transform: translateY(50%)
+	@media only screen and ($widthMax : $mediaIpadLandscape)
+		transform: translateY(12%)
+	@media only screen and ($widthMax: $mediaTabletLandscape)
+		left: 50%
+		margin-left: -256px
+		transform: translateY(4%)
+	@media only screen and ($widthMax : $mediaTabletVertical)
+		margin-left: -280px
+	@media only screen and ($widthMax : $mediaiPhone6PlusVertical)
+		width: 300px
+		margin-left: -150px
+		padding-top: 20px
+	@media only screen and ($widthMax : $mediaiPhone6Vertical)
+		padding-top: 16px
+	@media only screen and ($widthMax : $mediaiPhone5Vertical)
+		padding-top: 4px
+	p
+		font-family: 'Montserrat', sans-serif
+		font-style: normal
+		font-weight: 400
+		color: $whiteColor
+		text-transform: uppercase
+		text-align: center
+		font-size: 32px
+		position: relative
+		@media only screen and ($widthMax: $mediaTabletLandscape)
+			font-size: 22px
+		@media only screen and ($widthMax : $mediaTabletVertical)
+			font-size: 16px	
+		@media only screen and ($widthMax : $mediaiPhone6PlusVertical)
+			font-size: 12px	
+	img
+		@media only screen and ($widthMax : $mediaiPhone6PlusVertical)
+			display: none
+
+.classCopy
+	@media only screen and ($widthMin : $mediaBigScreen)
+		padding-bottom: 10px
+
+.studioPilatesWhite
+	width: 216px
+	height: auto
+	padding: 15px
+	left: 50%
+	position: relative
+	margin-left: -108px
+	@media only screen and ($widthMin : $mediaBigScreen)
+		width: 316px
+		margin-left: -158px
+	@media only screen and ($widthMax : $mediaTabletVertical)
+		width: 150px
+		margin-left: -75px
+
+.btnClear
+	font-family: "Montserrat", sans-serif
+	font-style: normal
+	font-weight: 400
+	text-transform: uppercase
+	font-size: 14px
+	color: #ffffff
+	border: 2px solid $whiteColor
+	position: relative
+	left: 50%
+	margin-left: -74px
+	&:hover, &:visited
+		color: $whiteColor
+		background-color: $darkGrayColor
+
+.viewSchedule
+	margin-left: -74px
+
+/*PRICING STYLES*/
+
+.col-md-3
+	padding-left: 0!important
+	@media only screen and ($widthMax : $mediaiPhone6PlusVertical)
+		padding-left: 15px!important
+
+.col-md-3.firstCol	
+	padding-left: 15px!important
+
+table 
+	caption
+		text-align: center
+	thead
+		tr
+			th
+				text-align: center
+				border-top: 0!important
+				border-bottom: 0!important
+				font-weight: 400
+				padding: 15px 8px!important
+	tbody
+		border-top: 0!important
+		tr
+			th
+				text-align: center
+				border-top: 0!important
+				font-weight: 400
+				padding: 15px 8px!important
+
+.tableHeader
+	font-size: 24px
+	text-transform: uppercase
+	font-weight: 400
+	text-align: center
+	margin-top: 15px
+	margin-bottom: 30px
+	@media only screen and ($widthMax: $mediaIpadLandscape)
+		font-size: 18px
+
+.apprenticeAdjust
+	margin-top: 32px
+	white-space: nowrap
+/*	@media only screen and ($widthMax: $mediaTabletLandscape)
+		white-space: normal*/
+
+.srInstructor
+	text-align: center
+
+.trRedD
+	background-color: $tableRedColorD
+
+.trRedL
+	background-color: $tableRedColorL
+
+.trBlueD
+	background-color: $tableBlueColorD
+
+.trBlueL
+	background-color: $tableBlueColorL
+
+.topTable
+	border-radius: 12px 12px 0 0 
+	-webkit-border-top-left-radius: 12px
+	-webkit-border-top-right-radius: 12px
+	-webkit-border-bottom-right-radius: 0
+	-webkit-border-bottom-left-radius: 0
+	-moz-border-radius-topleft: 12px
+	-moz-border-radius-topright: 12px
+	-moz-border-radius-bottomright: 0
+	-moz-border-radius-bottomleft: 0
+	border-top-left-radius: 12px
+	border-top-right-radius: 12px
+	border-bottom-right-radius: 0
+	border-bottom-left-radius: 0
+
+.bottomTable
+	border-radius: 0 0 12px 12px 
+	-webkit-border-top-left-radius: 0
+	-webkit-border-top-right-radius: 0
+	-webkit-border-bottom-right-radius: 12px
+	-webkit-border-bottom-left-radius: 12px
+	-moz-border-radius-topleft: 0
+	-moz-border-radius-topright: 0
+	-moz-border-radius-bottomright: 12px
+	-moz-border-radius-bottomleft: 12px
+	border-top-left-radius: 0
+	border-top-right-radius: 0
+	border-bottom-right-radius: 12px
+	border-bottom-left-radius: 12px
+
+.roundedCorners
+	border-radius: 12px 12px 12px 12px 
+	-webkit-border-top-left-radius: 12px
+	-webkit-border-top-right-radius: 12px
+	-webkit-border-bottom-right-radius: 12px
+	-webkit-border-bottom-left-radius: 12px
+	-moz-border-radius-topleft: 12px
+	-moz-border-radius-topright: 12px
+	-moz-border-radius-bottomright: 12px
+	-moz-border-radius-bottomleft: 12px
+	border-top-left-radius: 12px
+	border-top-right-radius: 12px
+	border-bottom-right-radius: 12px
+	border-bottom-left-radius: 12px
+
+.redColumnLine
+	border-bottom: 3px solid $redColor
+	padding-bottom: 6px
+
+.blueColumnLine
+	border-bottom: 3px solid $blueColor
+	padding-bottom: 6px
+
+.btnBlue
+	font-family: 'Montserrat', sans-serif
+	font-style: normal
+	font-weight: 400
+	text-transform: uppercase
+	font-size: 14px
+	color: $whiteColor
+	background-color: $blueColor
+	&:hover
+		color: $whiteColor
+		background-color: $blueColorDarker
+
+.btnTable
+	position: relative
+	left: 50%
+	margin-left: -43px
+
+.pricingBottom
+	margin-bottom: 45px
+
+/*EDUCATION STYLES*/
+.pp 
+	position: absolute
+	background-color: rgba(255,255,255,.55)
+	padding: 35px 50px 50px 50px
+	left: 50%
+	margin: 100px 0px 100px -41.6666%
+	border-radius: 12px 12px 12px 12px 
+	-webkit-border-top-left-radius: 12px
+	-webkit-border-top-right-radius: 12px
+	-webkit-border-bottom-right-radius: 12px
+	-webkit-border-bottom-left-radius: 12px
+	-moz-border-radius-topleft: 12px
+	-moz-border-radius-topright: 12px
+	-moz-border-radius-bottomright: 12px
+	-moz-border-radius-bottomleft: 12px
+	border-top-left-radius: 12px
+	border-top-right-radius: 12px
+	border-bottom-right-radius: 12px
+	border-bottom-left-radius: 12px
+	width: 83.3333%
+	@media only screen and ($widthMin : $mediaBigScreen)
+		margin-top: 190px
+	@media only screen and ($widthMax : $mediaIpadLandscape)
+		margin-top: 55px
+	@media only screen and ($widthMax: $mediaTabletLandscape)
+		margin-top: 33px
+		padding: 17px 25px 25px 25px
+	@media only screen and ($widthMax: $mediaTabletVertical)
+		padding: 10px 15px 15px 15px
+		margin-top: 32px
+	@media only screen and ($widthMax : $mediaiPhone5Vertical)
+		margin-top: 12px
+	img
+		@media only screen and ($widthMax : $mediaiPhone5Vertical)
+			display: none
+
+.ppHorz
+	width: 296px
+	height: auto
+	position: relative
+	left: 50%
+	margin-left: -148px
+	@media only screen and ($widthMax: $mediaTabletVertical)
+		width: 200px
+		margin-left: -100px
+
+.ppText
+	font-size: 28px
+	text-align: center
+	margin: 5px 0 20px 0
+	@media only screen and ($widthMax : $mediaIpadLandscape)
+		font-size: 24px
+		line-height: 28px
+	@media only screen and ($widthMax: $mediaTabletLandscape)
+		font-size: 18px
+		line-height: 24px
+	@media only screen and ($widthMax: $mediaTabletVertical)
+		font-size: 14px
+		line-height: 18px
+		margin-bottom: 10px
+	@media only screen and ($widthMax : $mediaiPhone5Vertical)
+		font-size: 12px
+		line-height: 14px
+		margin-bottom: 3px
+
+.btnClearBlk
+	font-family: "Montserrat", sans-serif
+	font-style: normal
+	font-weight: 400
+	text-transform: uppercase
+	font-size: 14px
+	color: $blackColor
+	border: 2px solid $blackColor
+	position: relative
+	left: 50%
+	margin-left: -84px
+	&:hover
+		color: $whiteColor
+		background-color: $darkGrayColor
+
+/*ABOUT STYLES*/
+.img50
+	width: 50%
+	height: auto
+	float: left
+
+.aboutUsContent
+	padding: 30px
+	overflow: hidden
+	@media only screen and ($widthMax : $mediaTabletVertical)
+		padding: 12px
+	@media only screen and ($widthMax : $mediaiPhone5Vertical)
+		padding: 0 5px
+
+.aboutTitle
+	font-family: "Montserrat", sans-serif
+	font-style: normal
+	font-weight: 400
+	text-transform: uppercase
+	font-size: 28px
+	color: $blackColor
+	@media only screen and ($widthMax : $mediaTabletLandscape)
+		font-size: 24px
+	@media only screen and ($widthMax : $mediaTabletVertical)
+		font-size: 18px	
+	@media only screen and ($widthMax : $mediaiPhone5Vertical)
+		font-size: 14px	
+
+.aboutText
+	font-family: "Montserrat", sans-serif
+	font-style: normal
+	font-weight: 400
+	font-size: 28px
+	color: $blackColor
+	@media only screen and ($widthMax : $mediaIpadLandscape)
+		font-size: 20px
+	@media only screen and ($widthMax : $mediaTabletLandscape)
+		font-size: 15px
+	@media only screen and ($widthMax : $mediaTabletVertical)
+		font-size: 12px		
+	@media only screen and ($widthMax : $mediaiPhone5Vertical)
+		font-size: 10px
+
+.logos
+	display: table
+	margin: 0 auto
+
+ul.aboutLogos
+	margin: 0
+	padding: 0
+	text-align: center
+	li 
+		list-style: none
+		display: inline
+		float: left
+		img
+			width: 150px
+			height: auto
+			padding: 15px
+			vertical-align: middle
+			@media only screen and ($widthMax : $mediaiPhone5Vertical)
+				padding: 5px
+
+.square
+	@media only screen and ($widthMax : $mediaTabletLandscape)
+		width: 100px!important
+	@media only screen and ($widthMax : $mediaTabletVertical)
+		width: 70px!important	
+
+.vertRectangle
+	width: 120px!important
+	@media only screen and ($widthMax : $mediaTabletLandscape)
+		width: 80px!important
+	@media only screen and ($widthMax : $mediaTabletVertical)
+		width: 60px!important		
+
+.midRectangle
+	width: 210px!important
+	@media only screen and ($widthMax : $mediaTabletLandscape)
+		width: 140px!important
+	@media only screen and ($widthMax : $mediaTabletVertical)
+		width: 100px!important	
+
+.longRectangle
+	width: 250px!important
+	@media only screen and ($widthMax : $mediaTabletLandscape)
+		width: 166px!important
+	@media only screen and ($widthMax : $mediaTabletVertical)
+		width: 120px!important	
+
+.nav-tabs.nav-justified
+	li
+		a
+			border: none
+			font-family: "Montserrat", sans-serif
+			font-style: normal
+			font-weight: 400
+			text-transform: uppercase
+			font-size: 14px
+			color: $blackColor!important
+			&:hover
+				background-color: $whiteColor
+
+
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:hover, .nav-tabs.nav-justified>.active>a:focus
+	border: none
+
+.tabTitle
+	&:hover
+		border-bottom: 2px solid $grayColor
+	
+.active span.tabTitle
+	border-bottom: 2px solid $redColor
+
+/*MAP STYLES*/
+#map
+	margin-bottom: -5px
+
+/* NAVIGATION STYLES*/
+.navbar
+	min-height: 60px
+
+ul.navbar-nav
+	position: relative
+	left: 50%
+	margin-left: -451px
+	padding-top: 18px
+	@media only screen and ($widthMin : $mediaIpadVertical) and ($widthMax : $mediaIpadLandscape) and ($or : $land)
+		margin-left: -417px
+	@media only screen and ($widthMin : $mediaTabletVertical) and ($widthMax : $mediaTabletLandscape)
+		margin-left: -340px
+		padding-top: 20px
+	@media only screen and ($widthMin : $mediaiPhone5Vertical) and ($widthMax: $mediaTabletVertical)
+		left: 15px
+		margin-left: 0
+		padding-top: 15px
+		width: 100%
+		height: auto
+
+.navbar-nav
+	padding: 0
+	ul
+		padding: 0
+	li
+		padding-right: 30px
+		@media only screen and ($widthMin : $mediaTabletVertical) and ($widthMax : $mediaTabletLandscape)
+			padding-right: 15px
+		a
+			padding: 0
+			&:hover
+				color: $grayColor!important
+			@media only screen and ($widthMin : $mediaTabletVertical) and ($widthMax : $mediaTabletLandscape)
+				font-size: 12px
+
+.navbar-inverse
+	z-index: 99
+
+.navbar-brand img
+	width: 107px
+	height: auto
+	padding-top: 2px
+	@media only screen and ($widthMin : $mediaiPhone5Vertical) and ($widthMax: $mediaTabletVertical)
+		padding-top: 5px
+		padding-left: 10px
+
+.socialLinks
+	padding-right: 10px!important
+	
+li.socialLinks
+	@media only screen and ($widthMin : $mediaiPhone5Vertical) and ($widthMax: $mediaTabletVertical)
+		display: inline-block
+		padding-bottom: 5px
+
+.instructions
+	display: none
+	@media only screen and ($widthMin : $mediaiPhone5Vertical) and ($widthMax: $mediaTabletVertical)
+		display: block
+		color: white
+		position: absolute
+		top: 22px
+		text-transform: uppercase
+		left: 50%
+		margin-left: -32px
+
+.navbar-toggle
+	border-radius: 12px 12px 12px 12px 
+	-webkit-border-top-left-radius: 12px
+	-webkit-border-top-right-radius: 12px
+	-webkit-border-bottom-right-radius: 12px
+	-webkit-border-bottom-left-radius: 12px
+	-moz-border-radius-topleft: 12px
+	-moz-border-radius-topright: 12px
+	-moz-border-radius-bottomright: 12px
+	-moz-border-radius-bottomleft: 12px
+	border-top-left-radius: 12px
+	border-top-right-radius: 12px
+	border-bottom-right-radius: 12px
+	border-bottom-left-radius: 12px
+	@media only screen and ($widthMin : $mediaiPhone5Vertical) and ($widthMax: $mediaTabletVertical)
+		padding: 15px 10px
+
+/*FOOTER STYLES*/
+footer
+	background-color: $blackColor
+	color: $whiteColor
+
+.btnWhite
+	font-family: "Montserrat", sans-serif
+	font-style: normal
+	font-weight: 400
+	text-transform: uppercase
+	font-size: 14px
+	color: $blackColor!important
+	background-color: $whiteColor!important
+	border: 2px solid $whiteColor
+	width: 100%
+	height: auto
+	&:hover
+		color: $whiteColor!important
+		background-color: $blackColor!important
+		cursor: visible
+	@media only screen and ($widthMax : $mediaTabletVertical)
+		width: 30%
+	@media only screen and ($widthMax : $mediaiPhone5Vertical)
+		width: 40%
+
+.socialMedia
+	padding: 30px 0
+	a
+		&:hover:visited
+			color: $grayColor
+
+.email
+	a
+	&:hover:visited
+		color: $grayColor
+
+.phone
+	a
+		&:hover:visited
+			color: $grayColor
+
+p.email, p.address, p.phone, p.newsletter, p.socialMediaInstructions
+	@media only screen and ($widthMax : $mediaIpadLandscape)
+		font-size: 11px
+	@media only screen and ($widthMax : $mediaTabletVertical)
+		font-size: 12px	
+
+.socialMediaIcons
+	font-size: 24px
+
+.fa-facebook-official
+	padding-left: 5px
+
+a.fa
+	color: $whiteColor
+	&:hover
+		text-decoration: none
+		color: $grayColor
+
+.mobileFooterInfo
+	@media only screen and ($widthMax : $mediaTabletVertical)
+		margin-bottom: 15px

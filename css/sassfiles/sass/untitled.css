@@ -1,0 +1,29 @@
+/* REFERENCE - RESPONSIVE BREAK POINTS */
+$mediaBigScreen: 1824px
+$mediaIpadLandscape: 1024px
+$mediaIpadVertical: 768px
+$mediaTabletLandscape: 800px
+$mediaTabletVertical: 600px
+$mediaiPhone5Landscape: 568px
+$mediaiPhone4Landscape: 480px
+$mediaiPhone5Vertical: 320px
+
+$widthMinD: min-device-width
+$widthMaxD: max-device-width
+$widthMin: min-width
+$widthMax: max-width
+$or: orientation
+$land: landscape
+$port: portrait
+
+Big screen
+s@media only screen and ($widthMin : $mediaBigScreen)
+
+iPad landscape
+@media only screen and ($widthMin : $mediaIpadVertical) and ($widthMax : $mediaIpadLandscape)
+
+iPad Vertical
+@media only screen and ($widthMin : $mediaTabletVertical) and ($widthMax : $mediaTabletLandscape)
+
+Small Screens
+@media only screen and ($widthMin : $mediaiPhone5Vertical) and ($widthMax: $mediaTabletVertical)

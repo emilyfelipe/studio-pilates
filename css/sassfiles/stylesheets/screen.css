@@ -1,0 +1,1293 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*REFERENCE - COLORS */
+/* REFERENCE - RESPONSIVE BREAK POINTS */
+/* TYPE! */
+/* line 41, ../sass/screen.sass */
+a {
+  color: #ffffff;
+}
+
+/* line 43, ../sass/screen.sass */
+p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* line 49, ../sass/screen.sass */
+.bold {
+  font-style: normal;
+  font-weight: 700;
+}
+
+/*UI! */
+/* line 54, ../sass/screen.sass */
+.btn {
+  border-radius: 12px 12px 12px 12px;
+  -webkit-border-top-left-radius: 12px;
+  -webkit-border-top-right-radius: 12px;
+  -webkit-border-bottom-right-radius: 12px;
+  -webkit-border-bottom-left-radius: 12px;
+  -moz-border-radius-topleft: 12px;
+  -moz-border-radius-topright: 12px;
+  -moz-border-radius-bottomright: 12px;
+  -moz-border-radius-bottomleft: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+/*CAROUSEL STYLES */
+/* line 70, ../sass/screen.sass */
+.carouselRight {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 100px;
+  margin-top: -60px;
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  /* line 70, ../sass/screen.sass */
+  .carouselRight {
+    right: 15px;
+    font-size: 50px;
+    margin-top: -30px;
+  }
+}
+
+/* line 81, ../sass/screen.sass */
+.carouselLeft {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 100px;
+  margin-top: -60px;
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  /* line 81, ../sass/screen.sass */
+  .carouselLeft {
+    left: 15px;
+    font-size: 50px;
+    margin-top: -30px;
+  }
+}
+
+/* line 92, ../sass/screen.sass */
+.img100 {
+  width: 100%;
+  height: auto;
+}
+
+/*EVENTS STYLES */
+/* line 97, ../sass/screen.sass */
+#events img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 101, ../sass/screen.sass */
+.eventMonth {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #4c4c4c;
+  text-transform: uppercase;
+  font-size: 24px;
+  top: 30px;
+  position: relative;
+}
+@media only screen and (min-width: 1824px) {
+  /* line 101, ../sass/screen.sass */
+  .eventMonth {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* line 101, ../sass/screen.sass */
+  .eventMonth {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  /* line 101, ../sass/screen.sass */
+  .eventMonth {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 101, ../sass/screen.sass */
+  .eventMonth {
+    font-size: 12px;
+  }
+}
+
+/* line 119, ../sass/screen.sass */
+.eventInfo {
+  padding-top: 20%;
+  left: 1%;
+}
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  /* line 119, ../sass/screen.sass */
+  .eventInfo {
+    padding-top: 9%;
+  }
+}
+
+/* line 126, ../sass/screen.sass */
+p.eventTitle {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #4c4c4c;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+@media only screen and (min-width: 1824px) {
+  /* line 126, ../sass/screen.sass */
+  p.eventTitle {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* line 126, ../sass/screen.sass */
+  p.eventTitle {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* line 126, ../sass/screen.sass */
+  p.eventTitle {
+    font-size: 30px;
+    padding-top: 8px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 126, ../sass/screen.sass */
+  p.eventTitle {
+    font-size: 24px;
+    padding-top: 15px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  /* line 126, ../sass/screen.sass */
+  p.eventTitle {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  /* line 126, ../sass/screen.sass */
+  p.eventTitle {
+    font-size: 11px;
+    padding-top: 19px;
+    padding-bottom: 0;
+    line-height: 11px;
+  }
+}
+
+/* line 153, ../sass/screen.sass */
+.eventDescription {
+  position: relative;
+}
+
+@media only screen and (min-width: 1824px) {
+  /* line 156, ../sass/screen.sass */
+  p.eventDescription {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* line 156, ../sass/screen.sass */
+  p.eventDescription {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* line 156, ../sass/screen.sass */
+  p.eventDescription {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 156, ../sass/screen.sass */
+  p.eventDescription {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  /* line 156, ../sass/screen.sass */
+  p.eventDescription {
+    font-size: 10px;
+    line-height: 11px;
+    padding: 0;
+  }
+}
+
+/* line 175, ../sass/screen.sass */
+.btnRed {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #c82832;
+}
+/* line 183, ../sass/screen.sass */
+.btnRed:hover {
+  color: #ffffff;
+  background-color: #7e1416;
+}
+@media only screen and (min-width: 1824px) {
+  /* line 175, ../sass/screen.sass */
+  .btnRed {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  /* line 175, ../sass/screen.sass */
+  .btnRed {
+    display: none;
+  }
+}
+
+/* line 192, ../sass/screen.sass */
+.eventMobile {
+  display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  /* line 192, ../sass/screen.sass */
+  .eventMobile {
+    display: block;
+  }
+}
+
+/* line 197, ../sass/screen.sass */
+.eventDesktop {
+  display: block;
+}
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  /* line 197, ../sass/screen.sass */
+  .eventDesktop {
+    display: none;
+  }
+}
+
+/* line 202, ../sass/screen.sass */
+.changeOfHeart {
+  position: absolute;
+  z-index: 10;
+}
+@media only screen and (max-width: 800px) {
+  /* line 202, ../sass/screen.sass */
+  .changeOfHeart {
+    top: 875px;
+    left: 3px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 202, ../sass/screen.sass */
+  .changeOfHeart {
+    top: 480px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* line 202, ../sass/screen.sass */
+  .changeOfHeart {
+    top: 508px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 202, ../sass/screen.sass */
+  .changeOfHeart {
+    top: 366px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  /* line 202, ../sass/screen.sass */
+  .changeOfHeart {
+    top: 575px;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 414px) {
+  /* line 202, ../sass/screen.sass */
+  .changeOfHeart {
+    top: 424px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  /* line 202, ../sass/screen.sass */
+  .changeOfHeart {
+    top: 385px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 202, ../sass/screen.sass */
+  .changeOfHeart {
+    top: 310px;
+  }
+}
+
+/*CLASS STYLES */
+/* line 228, ../sass/screen.sass */
+#pricing {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+/* line 232, ../sass/screen.sass */
+.classSchedule {
+  position: absolute;
+  z-index: 10;
+  transform: translateY(25%);
+  width: 512px;
+  left: 50%;
+  margin-left: -256px;
+}
+@media only screen and (min-width: 1824px) {
+  /* line 232, ../sass/screen.sass */
+  .classSchedule {
+    transform: translateY(50%);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* line 232, ../sass/screen.sass */
+  .classSchedule {
+    transform: translateY(12%);
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* line 232, ../sass/screen.sass */
+  .classSchedule {
+    left: 50%;
+    margin-left: -256px;
+    transform: translateY(4%);
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 232, ../sass/screen.sass */
+  .classSchedule {
+    margin-left: -280px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  /* line 232, ../sass/screen.sass */
+  .classSchedule {
+    width: 300px;
+    margin-left: -150px;
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  /* line 232, ../sass/screen.sass */
+  .classSchedule {
+    padding-top: 16px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 232, ../sass/screen.sass */
+  .classSchedule {
+    padding-top: 4px;
+  }
+}
+/* line 257, ../sass/screen.sass */
+.classSchedule p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+  position: relative;
+}
+@media only screen and (max-width: 800px) {
+  /* line 257, ../sass/screen.sass */
+  .classSchedule p {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 257, ../sass/screen.sass */
+  .classSchedule p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  /* line 257, ../sass/screen.sass */
+  .classSchedule p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  /* line 272, ../sass/screen.sass */
+  .classSchedule img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  /* line 276, ../sass/screen.sass */
+  .classCopy {
+    padding-bottom: 10px;
+  }
+}
+
+/* line 280, ../sass/screen.sass */
+.studioPilatesWhite {
+  width: 216px;
+  height: auto;
+  padding: 15px;
+  left: 50%;
+  position: relative;
+  margin-left: -108px;
+}
+@media only screen and (min-width: 1824px) {
+  /* line 280, ../sass/screen.sass */
+  .studioPilatesWhite {
+    width: 316px;
+    margin-left: -158px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 280, ../sass/screen.sass */
+  .studioPilatesWhite {
+    width: 150px;
+    margin-left: -75px;
+  }
+}
+
+/* line 294, ../sass/screen.sass */
+.btnClear {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  position: relative;
+  left: 50%;
+  margin-left: -74px;
+}
+/* line 305, ../sass/screen.sass */
+.btnClear:hover, .btnClear:visited {
+  color: #ffffff;
+  background-color: #4c4c4c;
+}
+
+/* line 309, ../sass/screen.sass */
+.viewSchedule {
+  margin-left: -74px;
+}
+
+/*PRICING STYLES */
+/* line 314, ../sass/screen.sass */
+.col-md-3 {
+  padding-left: 0 !important;
+}
+@media only screen and (max-width: 414px) {
+  /* line 314, ../sass/screen.sass */
+  .col-md-3 {
+    padding-left: 15px !important;
+  }
+}
+
+/* line 319, ../sass/screen.sass */
+.col-md-3.firstCol {
+  padding-left: 15px !important;
+}
+
+/* line 323, ../sass/screen.sass */
+table caption {
+  text-align: center;
+}
+/* line 327, ../sass/screen.sass */
+table thead tr th {
+  text-align: center;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  font-weight: 400;
+  padding: 15px 8px !important;
+}
+/* line 333, ../sass/screen.sass */
+table tbody {
+  border-top: 0 !important;
+}
+/* line 336, ../sass/screen.sass */
+table tbody tr th {
+  text-align: center;
+  border-top: 0 !important;
+  font-weight: 400;
+  padding: 15px 8px !important;
+}
+
+/* line 342, ../sass/screen.sass */
+.tableHeader {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 342, ../sass/screen.sass */
+  .tableHeader {
+    font-size: 18px;
+  }
+}
+
+/* line 352, ../sass/screen.sass */
+.apprenticeAdjust {
+  margin-top: 32px;
+  white-space: nowrap;
+}
+
+/*	@media only screen and ($widthMax: $mediaTabletLandscape)
+ * white-space: normal */
+/* line 358, ../sass/screen.sass */
+.srInstructor {
+  text-align: center;
+}
+
+/* line 361, ../sass/screen.sass */
+.trRedD {
+  background-color: #e9b9ba;
+}
+
+/* line 364, ../sass/screen.sass */
+.trRedL {
+  background-color: #f8e7e8;
+}
+
+/* line 367, ../sass/screen.sass */
+.trBlueD {
+  background-color: #bbd5e9;
+}
+
+/* line 370, ../sass/screen.sass */
+.trBlueL {
+  background-color: #e8f1f8;
+}
+
+/* line 373, ../sass/screen.sass */
+.topTable {
+  border-radius: 12px 12px 0 0;
+  -webkit-border-top-left-radius: 12px;
+  -webkit-border-top-right-radius: 12px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 12px;
+  -moz-border-radius-topright: 12px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* line 388, ../sass/screen.sass */
+.bottomTable {
+  border-radius: 0 0 12px 12px;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 12px;
+  -webkit-border-bottom-left-radius: 12px;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 12px;
+  -moz-border-radius-bottomleft: 12px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+/* line 403, ../sass/screen.sass */
+.roundedCorners {
+  border-radius: 12px 12px 12px 12px;
+  -webkit-border-top-left-radius: 12px;
+  -webkit-border-top-right-radius: 12px;
+  -webkit-border-bottom-right-radius: 12px;
+  -webkit-border-bottom-left-radius: 12px;
+  -moz-border-radius-topleft: 12px;
+  -moz-border-radius-topright: 12px;
+  -moz-border-radius-bottomright: 12px;
+  -moz-border-radius-bottomleft: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+/* line 418, ../sass/screen.sass */
+.redColumnLine {
+  border-bottom: 3px solid #7e1416;
+  padding-bottom: 6px;
+}
+
+/* line 422, ../sass/screen.sass */
+.blueColumnLine {
+  border-bottom: 3px solid #1774b8;
+  padding-bottom: 6px;
+}
+
+/* line 426, ../sass/screen.sass */
+.btnBlue {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #1774b8;
+}
+/* line 434, ../sass/screen.sass */
+.btnBlue:hover {
+  color: #ffffff;
+  background-color: #0a324f;
+}
+
+/* line 438, ../sass/screen.sass */
+.btnTable {
+  position: relative;
+  left: 50%;
+  margin-left: -43px;
+}
+
+/* line 443, ../sass/screen.sass */
+.pricingBottom {
+  margin-bottom: 45px;
+}
+
+/*EDUCATION STYLES */
+/* line 447, ../sass/screen.sass */
+.pp {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.55);
+  padding: 35px 50px 50px 50px;
+  left: 50%;
+  margin: 100px 0px 100px -41.6666%;
+  border-radius: 12px 12px 12px 12px;
+  -webkit-border-top-left-radius: 12px;
+  -webkit-border-top-right-radius: 12px;
+  -webkit-border-bottom-right-radius: 12px;
+  -webkit-border-bottom-left-radius: 12px;
+  -moz-border-radius-topleft: 12px;
+  -moz-border-radius-topright: 12px;
+  -moz-border-radius-bottomright: 12px;
+  -moz-border-radius-bottomleft: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  width: 83.3333%;
+}
+@media only screen and (min-width: 1824px) {
+  /* line 447, ../sass/screen.sass */
+  .pp {
+    margin-top: 190px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* line 447, ../sass/screen.sass */
+  .pp {
+    margin-top: 55px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* line 447, ../sass/screen.sass */
+  .pp {
+    margin-top: 33px;
+    padding: 17px 25px 25px 25px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 447, ../sass/screen.sass */
+  .pp {
+    padding: 10px 15px 15px 15px;
+    margin-top: 32px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 447, ../sass/screen.sass */
+  .pp {
+    margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 479, ../sass/screen.sass */
+  .pp img {
+    display: none;
+  }
+}
+
+/* line 483, ../sass/screen.sass */
+.ppHorz {
+  width: 296px;
+  height: auto;
+  position: relative;
+  left: 50%;
+  margin-left: -148px;
+}
+@media only screen and (max-width: 600px) {
+  /* line 483, ../sass/screen.sass */
+  .ppHorz {
+    width: 200px;
+    margin-left: -100px;
+  }
+}
+
+/* line 493, ../sass/screen.sass */
+.ppText {
+  font-size: 28px;
+  text-align: center;
+  margin: 5px 0 20px 0;
+}
+@media only screen and (max-width: 1024px) {
+  /* line 493, ../sass/screen.sass */
+  .ppText {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* line 493, ../sass/screen.sass */
+  .ppText {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 493, ../sass/screen.sass */
+  .ppText {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 493, ../sass/screen.sass */
+  .ppText {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 3px;
+  }
+}
+
+/* line 512, ../sass/screen.sass */
+.btnClearBlk {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  position: relative;
+  left: 50%;
+  margin-left: -84px;
+}
+/* line 523, ../sass/screen.sass */
+.btnClearBlk:hover {
+  color: #ffffff;
+  background-color: #4c4c4c;
+}
+
+/*ABOUT STYLES */
+/* line 528, ../sass/screen.sass */
+.img50 {
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+/* line 533, ../sass/screen.sass */
+.aboutUsContent {
+  padding: 30px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+  /* line 533, ../sass/screen.sass */
+  .aboutUsContent {
+    padding: 12px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 533, ../sass/screen.sass */
+  .aboutUsContent {
+    padding: 0 5px;
+  }
+}
+
+/* line 541, ../sass/screen.sass */
+.aboutTitle {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.8);
+}
+@media only screen and (max-width: 800px) {
+  /* line 541, ../sass/screen.sass */
+  .aboutTitle {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 541, ../sass/screen.sass */
+  .aboutTitle {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 541, ../sass/screen.sass */
+  .aboutTitle {
+    font-size: 14px;
+  }
+}
+
+/* line 555, ../sass/screen.sass */
+.aboutText {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.8);
+}
+@media only screen and (max-width: 1024px) {
+  /* line 555, ../sass/screen.sass */
+  .aboutText {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* line 555, ../sass/screen.sass */
+  .aboutText {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 555, ../sass/screen.sass */
+  .aboutText {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 555, ../sass/screen.sass */
+  .aboutText {
+    font-size: 10px;
+  }
+}
+
+/* line 570, ../sass/screen.sass */
+.logos {
+  display: table;
+  margin: 0 auto;
+}
+
+/* line 574, ../sass/screen.sass */
+ul.aboutLogos {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 578, ../sass/screen.sass */
+ul.aboutLogos li {
+  list-style: none;
+  display: inline;
+  float: left;
+}
+/* line 582, ../sass/screen.sass */
+ul.aboutLogos li img {
+  width: 150px;
+  height: auto;
+  padding: 15px;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 320px) {
+  /* line 582, ../sass/screen.sass */
+  ul.aboutLogos li img {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 590, ../sass/screen.sass */
+  .square {
+    width: 100px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 590, ../sass/screen.sass */
+  .square {
+    width: 70px !important;
+  }
+}
+
+/* line 596, ../sass/screen.sass */
+.vertRectangle {
+  width: 120px !important;
+}
+@media only screen and (max-width: 800px) {
+  /* line 596, ../sass/screen.sass */
+  .vertRectangle {
+    width: 80px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 596, ../sass/screen.sass */
+  .vertRectangle {
+    width: 60px !important;
+  }
+}
+
+/* line 603, ../sass/screen.sass */
+.midRectangle {
+  width: 210px !important;
+}
+@media only screen and (max-width: 800px) {
+  /* line 603, ../sass/screen.sass */
+  .midRectangle {
+    width: 140px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 603, ../sass/screen.sass */
+  .midRectangle {
+    width: 100px !important;
+  }
+}
+
+/* line 610, ../sass/screen.sass */
+.longRectangle {
+  width: 250px !important;
+}
+@media only screen and (max-width: 800px) {
+  /* line 610, ../sass/screen.sass */
+  .longRectangle {
+    width: 166px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 610, ../sass/screen.sass */
+  .longRectangle {
+    width: 120px !important;
+  }
+}
+
+/* line 619, ../sass/screen.sass */
+.nav-tabs.nav-justified li a {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+/* line 627, ../sass/screen.sass */
+.nav-tabs.nav-justified li a:hover {
+  background-color: #ffffff;
+}
+
+/* line 631, ../sass/screen.sass */
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus {
+  border: none;
+}
+
+/* line 635, ../sass/screen.sass */
+.tabTitle:hover {
+  border-bottom: 2px solid #989899;
+}
+
+/* line 638, ../sass/screen.sass */
+.active span.tabTitle {
+  border-bottom: 2px solid #7e1416;
+}
+
+/*MAP STYLES */
+/* line 642, ../sass/screen.sass */
+#map {
+  margin-bottom: -5px;
+}
+
+/* NAVIGATION STYLES */
+/* line 646, ../sass/screen.sass */
+.navbar {
+  min-height: 60px;
+}
+
+/* line 649, ../sass/screen.sass */
+ul.navbar-nav {
+  position: relative;
+  left: 50%;
+  margin-left: -451px;
+  padding-top: 18px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* line 649, ../sass/screen.sass */
+  ul.navbar-nav {
+    margin-left: -417px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  /* line 649, ../sass/screen.sass */
+  ul.navbar-nav {
+    margin-left: -340px;
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  /* line 649, ../sass/screen.sass */
+  ul.navbar-nav {
+    left: 15px;
+    margin-left: 0;
+    padding-top: 15px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* line 666, ../sass/screen.sass */
+.navbar-nav {
+  padding: 0;
+}
+/* line 668, ../sass/screen.sass */
+.navbar-nav ul {
+  padding: 0;
+}
+/* line 670, ../sass/screen.sass */
+.navbar-nav li {
+  padding-right: 20px;
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  /* line 670, ../sass/screen.sass */
+  .navbar-nav li {
+    padding-right: 15px;
+  }
+}
+/* line 674, ../sass/screen.sass */
+.navbar-nav li a {
+  padding: 0;
+}
+/* line 676, ../sass/screen.sass */
+.navbar-nav li a:hover {
+  color: #989899 !important;
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  /* line 674, ../sass/screen.sass */
+  .navbar-nav li a {
+    font-size: 12px;
+  }
+}
+
+/* line 681, ../sass/screen.sass */
+.navbar-inverse {
+  z-index: 99;
+}
+
+/* line 684, ../sass/screen.sass */
+.navbar-brand img {
+  width: 107px;
+  height: auto;
+  padding-top: 2px;
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  /* line 684, ../sass/screen.sass */
+  .navbar-brand img {
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+}
+
+/* line 692, ../sass/screen.sass */
+.nav li.socialLinks {
+  padding-right: 10px;
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  /* line 692, ../sass/screen.sass */
+  .nav li.socialLinks {
+    margin-top: -1vh;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  /* line 692, ../sass/screen.sass */
+  .nav li.socialLinks {
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+}
+
+/* line 700, ../sass/screen.sass */
+.nav li.phone {
+  color: white;
+  padding-left: 15px;
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  /* line 700, ../sass/screen.sass */
+  .nav li.phone {
+    position: absolute;
+    left: 62vw;
+    width: 15vw;
+    top: 3vh;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+  /* line 700, ../sass/screen.sass */
+  .nav li.phone {
+    display: none;
+  }
+}
+
+/* line 712, ../sass/screen.sass */
+.instructions {
+  display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+  /* line 712, ../sass/screen.sass */
+  .instructions {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 22px;
+    text-transform: uppercase;
+    left: 50%;
+    margin-left: -32px;
+  }
+}
+
+/* line 723, ../sass/screen.sass */
+.navbar-toggle {
+  border-radius: 12px 12px 12px 12px;
+  -webkit-border-top-left-radius: 12px;
+  -webkit-border-top-right-radius: 12px;
+  -webkit-border-bottom-right-radius: 12px;
+  -webkit-border-bottom-left-radius: 12px;
+  -moz-border-radius-topleft: 12px;
+  -moz-border-radius-topright: 12px;
+  -moz-border-radius-bottomright: 12px;
+  -moz-border-radius-bottomleft: 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  /* line 723, ../sass/screen.sass */
+  .navbar-toggle {
+    padding: 15px 10px;
+  }
+}
+
+/*FOOTER STYLES */
+/* line 741, ../sass/screen.sass */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+}
+
+/* line 745, ../sass/screen.sass */
+.btnWhite {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8) !important;
+  background-color: #ffffff !important;
+  border: 2px solid #ffffff;
+  width: 100%;
+  height: auto;
+}
+/* line 756, ../sass/screen.sass */
+.btnWhite:hover {
+  color: #ffffff !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  cursor: visible;
+}
+@media only screen and (max-width: 600px) {
+  /* line 745, ../sass/screen.sass */
+  .btnWhite {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 745, ../sass/screen.sass */
+  .btnWhite {
+    width: 40%;
+  }
+}
+
+/* line 765, ../sass/screen.sass */
+.socialMedia {
+  padding: 30px 0;
+}
+/* line 768, ../sass/screen.sass */
+.socialMedia a:hover:visited {
+  color: #989899;
+}
+
+/* line 773, ../sass/screen.sass */
+.email:hover:visited {
+  color: #989899;
+}
+
+/* line 778, ../sass/screen.sass */
+.phone a:hover:visited {
+  color: #989899;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* line 781, ../sass/screen.sass */
+  p.email, p.address, p.phone, p.newsletter, p.socialMediaInstructions {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 781, ../sass/screen.sass */
+  p.email, p.address, p.phone, p.newsletter, p.socialMediaInstructions {
+    font-size: 12px;
+  }
+}
+
+/* line 787, ../sass/screen.sass */
+.socialMediaIcons {
+  font-size: 24px;
+}
+
+/* line 790, ../sass/screen.sass */
+.fa-facebook-official {
+  padding-left: 5px;
+}
+
+/* line 793, ../sass/screen.sass */
+a.fa {
+  color: #ffffff;
+}
+/* line 795, ../sass/screen.sass */
+a.fa:hover {
+  text-decoration: none;
+  color: #989899;
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 799, ../sass/screen.sass */
+  .mobileFooterInfo {
+    margin-bottom: 15px;
+  }
+}
