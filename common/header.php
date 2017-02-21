@@ -29,6 +29,7 @@
                 <li class="socialLinks"><a class="fa fa-instagram" href="http://instagram.com/studio_pilates_209" target="_blank"></a></li>
                 <li class="socialLinks"><a class="fa fa-foursquare" href="https://foursquare.com/v/studio-pilates/4e59236b1f6e804280c145fc" target="_blank"></a></li>
                 <li class="socialLinks"><a class="fa fa-google-plus" href="https://plus.google.com/101508979900309661865" target="_blank"></a></li>
+                <li class="socialLinks"><a class="fa fa-yelp" href="https://www.yelp.com/biz/studio-pilates-el-segundo" target="_blank"></a></li>
                 <li class="phone">310 414.8180</li>
             </ul>
         </div><!-- /.navbar-collapse -->
